@@ -1,0 +1,63 @@
+header{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+.btnAdicionar{
+    background-color: rgb(3, 190, 18);
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+.btnAdicionar:hover{
+    background-color: rgb(17, 167, 30);
+    
+}
+
+.btnRemover{
+    background-color: rgb(190, 3, 3);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.btnRemover:hover{
+    background-color: rgb(167, 27, 17);
+}
+
+.inputTarefa{
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    height: 6vh;
+    width: 100%;
+}
+ul{
+    background-color: darkgrey;
+    padding: 5%;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    padding: 2% 3%;
+    border-radius: 5px;
+    margin: 1px;
+}
