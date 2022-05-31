@@ -3,7 +3,7 @@ header{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 70%;
+    bottom: 50px;
     right: 10px;
     
 }
@@ -19,7 +19,7 @@ main{
     border-radius: 5px;
     padding: 10px;
     color: white;
-    width: 100%;
+    width: 70%;
 }
 .btnAdicionar:hover{
     background-color: rgb(17, 167, 30);
@@ -38,6 +38,7 @@ main{
 }
 fieldset{
     display: flex;
+
 }
 .inputTarefa{
     background-color: lightgray;
