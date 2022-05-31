@@ -1,16 +1,24 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 header{
     height: 10vh;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom: 50px;
-    right: 10px;
-    
+    order: 2;
+
 }
 main{
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
+    order: 1;
 }
 .btnAdicionar{
     background-color: rgb(3, 190, 18);
@@ -38,6 +46,7 @@ main{
 }
 fieldset{
     display: flex;
+    width: 100%;
 
 }
 .inputTarefa{
