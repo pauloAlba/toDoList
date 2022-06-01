@@ -1,9 +1,7 @@
 
 let btnAdicionar = document.querySelector('.btnAdicionar')
 
-
 btnAdicionar.addEventListener("click", inserirDados)
-
 
 function inserirDados (){
     if(document.querySelector(".inputTarefa").value == ""){
@@ -14,12 +12,15 @@ function inserirDados (){
         return main.append(aviso)
     } 
 
-    
     let aviso = document.querySelectorAll('p')
     aviso.forEach( (teste)=> {
         teste.textContent = ""
     })
-    
+
+    let span = document.createElement("span")
+    span.innerHTML = "<span>&#10003;</span>"
+
+
     let btnRemover = document.createElement("button")
     btnRemover.classList.add("btnRemover")
     btnRemover.textContent = "Remover"
@@ -32,16 +33,23 @@ function inserirDados (){
 
     let li = document.createElement("li")
     li.textContent = document.querySelector(".inputTarefa").value
-    let list = Array.from(document.querySelectorAll("li"))
-    li.addEventListener("click", function () {
 
+    
+    let list = Array.from(document.querySelectorAll("li"))
+
+    li.addEventListener("click", function(item) {
+        li.classList.toggle("selecionado")
+        span.classList.toggle("span")
+    })
+    btnRemover.addEventListener("click", function () {
+        
     for (let i = 0; i <= list.length; i++){
         if(li.textContent == li.textContent){
             return li.remove()
         } 
-    }
-    })
-    
+        }
+    })        
+    li.append(span)
     li.append(btnRemover)
     ul.append(li)
 }

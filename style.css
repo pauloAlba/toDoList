@@ -8,26 +8,28 @@ body{
     flex-direction: column;
 }
 header{
-    height: 10vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     order: 2;
-
+    background-color: rgb(165, 0, 143);
 }
 main{
     display: flex;
     flex-direction: column;
     height: 80vh;
     order: 1;
+
 }
 .btnAdicionar{
-    background-color: rgb(3, 190, 18);
+    background-color: rgb(17, 167, 30);
     border: none;
     font-size: 14px;
     border-radius: 5px;
     padding: 10px;
     color: white;
     width: 70%;
+    font-weight: 600;
 }
 .btnAdicionar:hover{
     background-color: rgb(17, 167, 30);
@@ -35,22 +37,31 @@ main{
 }
 
 .btnRemover{
-    background-color: rgb(190, 3, 3);
+    background-color: rgb(148, 0, 116);
     border: none;
     border-radius: 5px;
     padding: 10px;
     color: white;
+    transition: .2s;
+}
+.btnRemover:active{
+    opacity: 0.2;
+
 }
 .btnRemover:hover{
-    background-color: rgb(167, 27, 17);
+    background-color: rgb(116, 0, 0);
 }
+
 fieldset{
     display: flex;
     width: 100%;
+    color: white;
+    border: none;
+    margin: 1%;
 
 }
 .inputTarefa{
-    background-color: lightgray;
+    background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 5px;
     margin: 5px;
@@ -59,6 +70,8 @@ fieldset{
     padding:  0 4%;
 }
 ul{
+    display: flex;
+    flex-direction: column;
     background-color: darkgrey;
     padding: 5%;
     align-items: center;
@@ -73,4 +86,37 @@ li{
     padding: 2% 3%;
     border-radius: 5px;
     margin: 1px;
+    width: 100%;
+    transition: 1s;
+    color: black;
+    font-weight: 600;
+}
+li:active{
+    background-color: rgb(255, 255, 255);
+    padding: 2% 3%;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+}
+
+.selecionado{
+    background-color: rgba(0, 107, 41, 0.651);
+    order: 1;
+    transition: 1s;
+    color: white;
+    position: relative;
+    left: 5%;
+    transform: scale(0.9);
+
+}
+
+
+
+span{
+    order: -1;
+}
+
+.span{
+    color: rgb(0, 255, 0);
+    order: -1;
 }
