@@ -8,8 +8,8 @@ self.addEventListener('install', function(event){
                 './index.html',
                 './manifest.webmanifest',
                 './style.css',
-                './crud.js',
                 './autocomplete.js',
+                './crud.js',
                 './index.js'
             ])
         })
