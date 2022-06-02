@@ -9,7 +9,7 @@ body{
     background-color: rgb(70, 70, 70);
 }
 header{
-    height: 10vh;
+    height: 20vh;
     display: flex;
     order: 2;
     background-color: rgb(165, 0, 143);
@@ -20,7 +20,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 80vh;
     order: 1;
 
 }
