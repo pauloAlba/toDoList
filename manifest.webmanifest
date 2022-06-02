@@ -1,6 +1,6 @@
 {
-    "short_name": "Sobre a Faculdade iv2",
-    "name": "aboutiv2",
+    "short_name": "Lista",
+    "name": "Lista",
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#ffffff",
