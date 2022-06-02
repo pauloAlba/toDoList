@@ -53,3 +53,10 @@ function inserirDados (){
     li.append(btnRemover)
     ul.append(li)
 }
+
+
+/*
+function sugestao (){
+    alert("lista")
+}
+*/
