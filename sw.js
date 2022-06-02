@@ -5,10 +5,10 @@ self.addEventListener('install', function(event){
         caches.open(cacheName).then(function (cache){
             cache.addAll([
                 './',
-                './index.html',
                 './manifest.webmanifest',
-                './autocomplete.js',
+                './index.html',
                 './crud.js',
+                './autocomplete.js',
                 './style.css',
                 './index.js'
             ])
