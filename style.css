@@ -29,9 +29,17 @@ main{
     border: none;
     font-size: 14px;
     border-radius: 5px;
-    padding: 10px;
     color: white;
-    width: 70%;
+    width: 80%;
+    font-weight: 600;
+}
+.btnQTD{
+    background-color: rgb(70, 70, 70);
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    width: 17%;
     font-weight: 600;
 }
 .btnAdicionar:hover{
@@ -59,23 +67,21 @@ main{
     background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 5px;
-    height: 6vh;
-    width: 100%;
+    width: 80%;
     padding:  0 4%;
 }
 .inputQtd{
     background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 5px;
-    height: 6vh;
-    width: 20%;
-    padding:  0 4%;
+    width: 17%;
+    text-align: center;
 }
 ul{
     display: flex;
     flex-direction: column;
     background-color: darkgrey;
-    padding: 5%;
+    padding: 2%;
     align-items: center;
     overflow-y: scroll;
     height: 100vh;
@@ -86,7 +92,7 @@ li{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(226, 226, 226);
-    padding: 2% 3%;
+    padding: 2px 3px;
     border-radius: 5px;
     margin: 1px;
     width: 100%;
@@ -109,7 +115,8 @@ li:active{
     color: white;
     position: relative;
     left: 5%;
-    transform: scale(0.9);
+    transform: scalex(0.9);
+    margin: 1px;
 
 }
 
@@ -129,7 +136,7 @@ span{
     position: fixed;
     justify-content: flex-end;
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     
 }
 
