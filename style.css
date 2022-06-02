@@ -13,6 +13,8 @@ header{
     display: flex;
     order: 2;
     background-color: rgb(165, 0, 143);
+    padding: 5px;
+    gap: 5px;
 }
 main{
     display: flex;
@@ -52,19 +54,10 @@ main{
     background-color: rgb(116, 0, 0);
 }
 
-fieldset{
-    display: flex;
-    width: 100%;
-    color: white;
-    border: none;
-    margin: 1%;
-
-}
 .inputTarefa{
     background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 5px;
-    margin: 5px;
     height: 6vh;
     width: 100%;
     padding:  0 4%;
@@ -111,8 +104,6 @@ li:active{
 
 }
 
-
-
 span{
     order: -1;
 }
@@ -120,22 +111,6 @@ span{
 .span{
     color: rgb(0, 255, 0);
     order: -1;
-}
-footer{
-    order: 3;
-    font-style: none;
-    text-decoration: none;
-    list-style: none;
-    color: #F5F5F5;
-    height: 5vh;
-    padding: 1%;
-}
-footer a{
-    font-style: none;
-    text-decoration: none;
-    list-style: none;
-    color: #62D65F;
-    height: 100%;
 }
 
 .autocomplete-items{
@@ -155,12 +130,9 @@ footer a{
   display: inline-block;
 }
 
-
 .autocomplete-items div {
-  padding: 10px;
   cursor: pointer;
   background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
 }
 .autocomplete-items div:hover {
   /*when hovering an item:*/

@@ -3,6 +3,8 @@ let btnAdicionar = document.querySelector('.btnAdicionar')
 
 btnAdicionar.addEventListener("click", inserirDados)
 
+let quantidade = 0
+
 function inserirDados (){
     if(document.querySelector(".inputTarefa").value == ""){
         let aviso = document.querySelector("p")
