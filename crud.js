@@ -1,7 +1,10 @@
 
 let btnAdicionar = document.querySelector('.btnAdicionar')
+let btnUnidade = document.querySelector('.btnUnidade')
+btnUnidade.textContent = "Unid."
 
 btnAdicionar.addEventListener("click", inserirDados)
+btnUnidade.addEventListener("click", trocaUnidade)
 
 let quantidade = 0
 
@@ -18,6 +21,11 @@ function inserirDados (){
     aviso.forEach( (teste)=> {
         teste.textContent = ""
     })
+
+    let inputQTD = document.querySelector('.inputQtd')
+    let qtd = document.createElement("h1")
+    qtd.classList.add("qtd")
+    qtd.textContent = inputQTD.value + " " +btnUnidade.textContent
 
     let span = document.createElement("span")
     span.innerHTML = "<span>&#10003;</span>"
@@ -53,7 +61,26 @@ function inserirDados (){
     })        
     li.append(span)
     li.append(btnRemover)
+    btnRemover.append(qtd)
     ul.append(li)
+}
+
+
+let click = 0
+function trocaUnidade (){
+    click++
+    if(click == 1 ){
+        btnUnidade.textContent = "kg"
+        
+    } else if (click == 2){
+        
+        btnUnidade.textContent = "g"
+    }else{
+        
+        click = 0
+        btnUnidade.textContent = "Unid."
+    }
+
 }
 
 

@@ -33,7 +33,7 @@ main{
     width: 80%;
     font-weight: 600;
 }
-.btnQTD{
+.btnUnidade{
     background-color: rgb(70, 70, 70);
     border: none;
     font-size: 14px;
@@ -92,14 +92,16 @@ li{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(226, 226, 226);
-    padding: 2px 3px;
+    padding: 1px 1px;
     border-radius: 5px;
     margin: 1px;
     width: 100%;
     transition: 1s;
-    color: black;
+    color: rgb(75, 75, 75);
     font-weight: 600;
+    font-size: 18px;
 }
+
 li:active{
     background-color: rgb(255, 255, 255);
     padding: 2% 3%;
@@ -122,13 +124,17 @@ li:active{
 
 span{
     order: -1;
+    padding: 5px;
 }
 
 .span{
     color: rgb(0, 255, 0);
     order: -1;
 }
-
+.qtd{
+    order: 1;
+    font-size: 14px;
+}
 .autocomplete-items{
     display: flex;
     flex-direction: column;
