@@ -15,11 +15,12 @@ header{
     background-color: rgb(165, 0, 143);
     padding: 5px;
     gap: 5px;
+    flex-wrap: wrap;
 }
 main{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 85vh;
     order: 1;
 
 }
@@ -60,6 +61,14 @@ main{
     border-radius: 5px;
     height: 6vh;
     width: 100%;
+    padding:  0 4%;
+}
+.inputQtd{
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 5px;
+    height: 6vh;
+    width: 20%;
     padding:  0 4%;
 }
 ul{
@@ -142,4 +151,9 @@ span{
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+form{
+    display: flex;
+    gap: 5px;
 }
