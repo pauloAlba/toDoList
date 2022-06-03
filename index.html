@@ -11,15 +11,59 @@
 </head>
 <body>
     <header>
-        <input autocomplete="off"  onfocus="this.value=''" class="inputTarefa" id="myInput" type="text" name="myCountry" placeholder="Digite aqui...">
+        <h1 onmousedown="mudarTela()" class="inputTarefa" name="myCountry" id="myInput"></h1>
         <input class="inputQtd" onfocus="this.value=''" type="number" name="" id="" value="1">
         <button class="btnAdicionar">Adicionar</button>
         <button class="btnUnidade"></button>
+        <section class="tecladoLetras">
+            <div>
+                <button class="letra" value="q">q</button>
+                <button class="letra" value="w">w</button>
+                <button class="letra" value="w">e</button>
+                <button class="letra" value="w">r</button>
+                <button class="letra" value="w">t</button>
+                <button class="letra" value="w">y</button>
+                <button class="letra" value="w">u</button>
+                <button class="letra" value="w">i</button>
+                <button class="letra" value="w">o</button>
+                <button class="letra" value="w">p</button>
+            </div>
+            <div>
+                <button class="letra" value="letra">a</button>
+                <button class="letra" value="letra">s</button>
+                <button class="letra" value="letra">d</button>
+                <button class="letra" value="letra">f</button>
+                <button class="letra" value="letra">g</button>
+                <button class="letra" value="letra">h</button>
+                <button class="letra" value="letra">j</button>
+                <button class="letra" value="letra">k</button>
+                <button class="letra" value="letra">l</button>
+                <button class="letra" value="letra">ç</button>
+            </div>
+            <div>
+   
+                <button class="letra" value="letra">z</button>
+                <button class="letra" value="letra">x</button>
+                <button class="letra" value="letra">c</button>
+                <button class="letra" value="letra">v</button>
+                <button class="letra" value="letra">b</button>
+                <button class="letra" value="letra">n</button>
+                <button class="letra" value="letra">m</button>
+   
+            </div>
+       
+        </section>
+             
+       
     </header>
     <main>
         <ul>
         </ul>
+
+
     </main>
+
+
     
     <!--Make sure the form has the autocomplete function switched off:-->
     

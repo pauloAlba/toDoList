@@ -3,9 +3,11 @@ let btnAdicionar = document.querySelector('.btnAdicionar')
 let inputTarefa = document.querySelector('.inputTarefa')
 let btnUnidade = document.querySelector('.btnUnidade')
 btnUnidade.textContent = "Unid."
+let div = Array.from(document.querySelectorAll(".letra"))
 
-
-
+div.forEach( (item) => {
+    item.addEventListener("click", adicionarletra)
+})
 
 inputTarefa.addEventListener("focus", mudarTela)
 btnAdicionar.addEventListener("click", inserirDados)
@@ -15,7 +17,7 @@ btnUnidade.addEventListener("click", trocaUnidade)
 let quantidade = 0
 
 function inserirDados (){
-    if(document.querySelector(".inputTarefa").value == ""){
+    if(document.querySelector(".inputTarefa").textContent == ""){
         let aviso = document.querySelector("p")
         let main = document.querySelector("header")
         aviso.textContent = "Por favor, insira um valor para continuar"
@@ -48,7 +50,7 @@ function inserirDados (){
     let ul = document.querySelector("ul")
 
     let li = document.createElement("li")
-    li.textContent = document.querySelector(".inputTarefa").value
+    li.textContent = document.querySelector(".inputTarefa").textContent
 
     
     let list = Array.from(document.querySelectorAll("li"))
@@ -89,7 +91,9 @@ function trocaUnidade (){
 
 }
 window.onload(mudarTela())
+
 function mudarTela(){
+    let tecladoLetras = document.querySelector(".tecladoLetras")
     let header = document.querySelector("header")
     let main = document.querySelector("main")
     let btnUnidade = document.querySelector('.btnUnidade')
@@ -104,8 +108,19 @@ function mudarTela(){
     inputQtd.classList.toggle("esconder")
     inputTarefa.classList.toggle("esconder")
 
+    tecladoLetras.classList.toggle("esconder")
     
 }
+
+
+function adicionarletra (){
+    for(let i = 0; i <= div.length; i++){
+        if(this.textContent == this.textContent){
+            return document.querySelector("h1").textContent += this.textContent
+        } 
+    }
+}
+
 /*
 function sugestao (){
     alert("lista")
