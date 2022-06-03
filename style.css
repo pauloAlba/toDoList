@@ -16,7 +16,7 @@ body{
     }
 }
 header{
-    height: 50vh;
+    height: 60vh;
     display: flex;
     order: 2;
     background-color: rgb(165, 0, 143);
@@ -36,7 +36,7 @@ header.esconder{
 main{
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 40vh;
     order: 1;
 }
 main.esconder{
@@ -218,11 +218,24 @@ form{
     flex-direction: column;
     width: 100%;
     height: 50%;
-    justify-content: space-evenly;
+}
+.tecladoLetras > div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
     align-items: center;
+ 
+   
 }
 .letra{
-    background-color: greenyellow;
+    background-color: rgb(36, 182, 0);
+    border: solid white 1px;
+    width: 10%;
+    height: 100%;
+    border-radius: 5px;
+
 
 }
 
