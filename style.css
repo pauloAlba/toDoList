@@ -22,6 +22,7 @@ main{
     flex-direction: column;
     height: 80vh;
     order: 1;
+    
 
 }
 .btnAdicionar{
@@ -155,6 +156,9 @@ span{
 .autocomplete-items div {
   cursor: pointer;
   background-color: #fff;
+  font-size: 18px;
+  padding: 5px;
+
 }
 .autocomplete-items div:hover {
   /*when hovering an item:*/
