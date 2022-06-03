@@ -17,13 +17,26 @@ header{
     gap: 5px;
     flex-wrap: wrap;
 }
+header.esconder{
+    height: 10vh;
+    display: flex;
+    order: 2;
+    background-color: rgb(165, 0, 143);
+    padding: 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
 main{
     display: flex;
     flex-direction: column;
     height: 80vh;
     order: 1;
-    
-
+}
+main.esconder{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    order: 1;
 }
 .btnAdicionar{
     background-color: rgb(17, 167, 30);
@@ -69,6 +82,14 @@ main{
     border: none;
     border-radius: 5px;
     width: 80%;
+    padding:  0 4%;
+}
+.inputTarefa.remover{
+    display: inherit;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
     padding:  0 4%;
 }
 .inputQtd{
@@ -173,4 +194,7 @@ span{
 form{
     display: flex;
     gap: 5px;
+}
+.esconder{
+    display: none;
 }

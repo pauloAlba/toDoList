@@ -11,7 +11,8 @@ self.addEventListener('install', function(event){
                 './crud.js',
                 './autocomplete.js',
                 './index.js'         
-                                               
+                
+                                            
             ])
         })
     )

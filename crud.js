@@ -1,9 +1,15 @@
 
 let btnAdicionar = document.querySelector('.btnAdicionar')
+let inputTarefa = document.querySelector('.inputTarefa')
 let btnUnidade = document.querySelector('.btnUnidade')
 btnUnidade.textContent = "Unid."
 
+
+
+
+inputTarefa.addEventListener("focus", mudarTela)
 btnAdicionar.addEventListener("click", inserirDados)
+btnAdicionar.addEventListener("click", mudarTela)
 btnUnidade.addEventListener("click", trocaUnidade)
 
 let quantidade = 0
@@ -82,8 +88,17 @@ function trocaUnidade (){
     }
 
 }
+window.onload(mudarTela())
+function mudarTela(){
+    let header = document.querySelector("header")
+    let main = document.querySelector("main")
 
-
+    btnAdicionar.classList.toggle("esconder")
+    btnUnidade.classList.toggle("esconder")
+    header.classList.toggle("esconder")
+    main.classList.toggle("esconder")
+    
+}
 /*
 function sugestao (){
     alert("lista")
