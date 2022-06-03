@@ -92,11 +92,18 @@ window.onload(mudarTela())
 function mudarTela(){
     let header = document.querySelector("header")
     let main = document.querySelector("main")
+    let btnUnidade = document.querySelector('.btnUnidade')
+    let inputQtd = document.querySelector('.inputQtd')
+    
+
 
     btnAdicionar.classList.toggle("esconder")
     btnUnidade.classList.toggle("esconder")
     header.classList.toggle("esconder")
     main.classList.toggle("esconder")
+    inputQtd.classList.toggle("esconder")
+    inputTarefa.classList.toggle("esconder")
+
     
 }
 /*

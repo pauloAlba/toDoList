@@ -80,24 +80,31 @@ main.esconder{
 .inputTarefa{
     background-color: rgb(247, 247, 247);
     border: none;
+    display: inherit;
     border-radius: 5px;
     width: 80%;
+    flex-shrink: 20%;
     padding:  0 4%;
 }
-.inputTarefa.remover{
-    display: inherit;
+
+.inputTarefa.esconder{
     background-color: rgb(247, 247, 247);
+    display: initial;
     border: none;
+    display: inherit;
     border-radius: 5px;
     width: 100%;
+    flex-shrink: 20%;
     padding:  0 4%;
 }
+
 .inputQtd{
     background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 5px;
     width: 17%;
     text-align: center;
+    flex-grow: 20%;
 }
 ul{
     display: flex;
