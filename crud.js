@@ -1,7 +1,10 @@
-
 let btnAdicionar = document.querySelector('.btnAdicionar')
 let inputTarefa = document.querySelector('.inputTarefa')
 let btnUnidade = document.querySelector('.btnUnidade')
+let btnBackspace = document.querySelector('.backspace')
+
+
+
 btnUnidade.textContent = "Unid."
 let div = Array.from(document.querySelectorAll(".letra"))
 
@@ -9,6 +12,7 @@ div.forEach( (item) => {
     item.addEventListener("click", adicionarletra)
 })
 
+btnBackspace.addEventListener("click", backspace)
 inputTarefa.addEventListener("focus", mudarTela)
 btnAdicionar.addEventListener("click", inserirDados)
 btnAdicionar.addEventListener("click", mudarTela)
@@ -119,6 +123,11 @@ function adicionarletra (){
             return document.querySelector("h1").textContent += this.textContent
         } 
     }
+}
+
+
+function backspace (){
+    document.querySelector(".inputTarefa").textContent =""
 }
 
 /*
