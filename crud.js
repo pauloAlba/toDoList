@@ -1,22 +1,38 @@
-let btnAdicionar = document.querySelector('.btnAdicionar')
+
 let inputTarefa = document.querySelector('.inputTarefa')
 let btnUnidade = document.querySelector('.btnUnidade')
 let btnBackspace = document.querySelector('.backspace')
+let btnBackspace2 = document.querySelector('.backspace2')
+let inputQTD = document.querySelector(".inputNum")
+let abrirFechar = document.querySelector('.abrirFechar')
+let btnAdicionar = document.querySelector('.btnAdicionar')
+
+
+
 
 
 
 btnUnidade.textContent = "Unid."
 let div = Array.from(document.querySelectorAll(".letra"))
+let div2 = Array.from(document.querySelectorAll(".numero"))
 
 div.forEach( (item) => {
     item.addEventListener("click", adicionarletra)
 })
+div2.forEach( (item) => {
+    item.addEventListener("click", adicionarnumero)
+})
 
+
+
+inputTarefa.addEventListener("click", abrirTela)
+abrirFechar.addEventListener("click", fecharTela)
+inputQTD.addEventListener("focus", mudarTecladoNumerico)
 btnBackspace.addEventListener("click", backspace)
-inputTarefa.addEventListener("focus", mudarTela)
+btnBackspace2.addEventListener("click", backspace2)
 btnAdicionar.addEventListener("click", inserirDados)
-btnAdicionar.addEventListener("click", mudarTela)
 btnUnidade.addEventListener("click", trocaUnidade)
+btnAdicionar.addEventListener("click", limparTeclado)
 
 let quantidade = 0
 
@@ -34,10 +50,10 @@ function inserirDados (){
         teste.textContent = ""
     })
 
-    let inputQTD = document.querySelector('.inputQtd')
+    let inputQTD = document.querySelector('.inputNum')
     let qtd = document.createElement("h1")
     qtd.classList.add("qtd")
-    qtd.textContent = inputQTD.value + " " +btnUnidade.textContent
+    qtd.textContent = inputQTD.textContent + " " +btnUnidade.textContent
 
     let span = document.createElement("span")
     span.innerHTML = "<span>&#10003;</span>"
@@ -94,25 +110,47 @@ function trocaUnidade (){
     }
 
 }
-window.onload(mudarTela())
+window.onload(fecharTela())
 
-function mudarTela(){
-    let tecladoLetras = document.querySelector(".tecladoLetras")
+function abrirTela(){
     let header = document.querySelector("header")
     let main = document.querySelector("main")
     let btnUnidade = document.querySelector('.btnUnidade')
-    let inputQtd = document.querySelector('.inputQtd')
+    let inputQtd = document.querySelector('.inputNum')
+    let tecladoLetras = document.querySelector(".tecladoLetras")
+    let tecladoNumerico = document.querySelector(".tecladoNumerico")
+    let abrirFechar = document.querySelector(".abrirFechar")
+    abrirFechar.classList.remove("esconder")
+    tecladoLetras.classList.remove("esconder")
+    tecladoNumerico.classList.add("esconder")
+   
+    btnAdicionar.classList.remove("esconder")
+    btnUnidade.classList.remove("esconder")
+    header.classList.remove("esconder")
+    main.classList.remove("esconder")
+    inputQtd.classList.remove("esconder")
+    inputTarefa.classList.remove("esconder")
+}
+
+function fecharTela(){
+    let header = document.querySelector("header")
+    let main = document.querySelector("main")
+    let btnUnidade = document.querySelector('.btnUnidade')
+    let inputQtd = document.querySelector('.inputNum')
+    let tecladoLetras = document.querySelector(".tecladoLetras")
+    let tecladoNumerico = document.querySelector(".tecladoNumerico")
+    let abrirFechar = document.querySelector(".abrirFechar")
+    abrirFechar.classList.add("esconder")
+    tecladoLetras.classList.add("esconder")
+    tecladoNumerico.classList.add("esconder")
     
 
-
-    btnAdicionar.classList.toggle("esconder")
-    btnUnidade.classList.toggle("esconder")
-    header.classList.toggle("esconder")
-    main.classList.toggle("esconder")
-    inputQtd.classList.toggle("esconder")
-    inputTarefa.classList.toggle("esconder")
-
-    tecladoLetras.classList.toggle("esconder")
+    btnAdicionar.classList.add("esconder")
+    btnUnidade.classList.add("esconder")
+    header.classList.add("esconder")
+    main.classList.add("esconder")
+    inputQtd.classList.add("esconder")
+    inputTarefa.classList.add("esconder")
     
 }
 
@@ -125,13 +163,49 @@ function adicionarletra (){
     }
 }
 
+function adicionarnumero (){
+    for(let i = 0; i <= div2.length; i++){
+        if(this.textContent == this.textContent){
+            return document.querySelector("h2").textContent += this.textContent
+        } 
+    }
+}
 
 function backspace (){
     document.querySelector(".inputTarefa").textContent =""
 }
+function backspace2 (){
+    document.querySelector(".inputNum").textContent =""
+}
+
+
+
+function mudarTeclado(){
+    let tecladoLetras = document.querySelector(".tecladoLetras")
+    let tecladoNumerico = document.querySelector(".tecladoNumerico")
+    tecladoLetras.classList.remove("esconder")
+    tecladoNumerico.classList.add("esconder") 
+}
+
+function mudarTecladoNumerico(){
+    let tecladoLetras = document.querySelector(".tecladoLetras")
+    let tecladoNumerico = document.querySelector(".tecladoNumerico")
+    tecladoLetras.classList.add("esconder")
+    tecladoNumerico.classList.remove("esconder") 
+}
+
+function limparTeclado (){
+    document.querySelector('.inputNum').textContent = 1
+    document.querySelector(".inputTarefa").textContent =""
+    
+
+}
+
 
 /*
 function sugestao (){
     alert("lista")
 }
+
+
 */

@@ -10,9 +10,13 @@
     <title>crud</title>
 </head>
 <body>
+   
     <header>
-        <h1 onmousedown="mudarTela()" class="inputTarefa" name="myCountry" id="myInput"></h1>
-        <input class="inputQtd" onfocus="this.value=''" type="number" name="" id="" value="1">
+
+        <button class="abrirFechar">X</button>
+    
+        <h1 onmousedown="abrirTela()" onmousedown="mudarTeclado()" class="inputTarefa" name="myCountry" id="myInput"></h1>
+        <h2 onmousedown="mudarTecladoNumerico()" class="inputNum" name="myCountry" id="myInput"></h2>
         <button class="btnAdicionar">Adicionar</button>
         <button class="btnUnidade"></button>
         <section class="tecladoLetras">
@@ -54,7 +58,30 @@
             </div>
        
         </section>
-             
+        <section class="tecladoNumerico">
+            <div>
+                <button class="numero" value="numero">1</button>
+                <button class="numero" value="numero">2</button>
+                <button class="numero" value="numero">3</button>
+                <button class="numero" value="numero">4</button>
+            </div>
+            <div>
+                <button class="numero" value="numero">5</button>
+                <button class="numero" value="numero">6</button>
+                <button class="numero" value="numero">7</button>
+                <button class="numero" value="numero">8</button>
+            </div>
+            <div>
+                <button class="numero" value="numero">9</button>
+                <button class="numero" value="numero">0</button>
+                <button class="numero" value="numero">.</button>
+
+                <button class="backspace2">Remover</button>
+
+            </div>
+            
+        </section>
+
        
     </header>
     <main>
