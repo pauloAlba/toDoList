@@ -112,7 +112,6 @@ function trocaUnidade (){
 
 }
 window.addEventListener('load',  function() { 
-        alert('hello!');
         fecharTela()
   }, false);
 
