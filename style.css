@@ -88,6 +88,10 @@ main.esconder{
     height: 16%;
     font-weight: 600;
 }
+.btnUnidade:active{
+    background-color: #F4F4F4;
+    color: #494949;
+}
 @media (min-width: 90em){
     .btnUnidade{
         font-size: 36px;
@@ -294,6 +298,11 @@ form{
     font-weight: 600;
     border: solid 1px #8D49E3;
 }
+.letra:active{
+    background-color: #494949;
+
+  
+}
 @media (min-width: 90em){
     .letra{
         font-size: 32px;
@@ -309,6 +318,10 @@ form{
     font-size: 12px;
     font-weight: 600;
     border: solid 1px #8D49E3;
+}
+.capslock:active{
+    background-color: #494949;
+    color: #F4F4F4;
 }
 @media (min-width: 90em){
     .capslock{
@@ -326,6 +339,10 @@ form{
     font-weight: 600;
     border: solid 1px #8D49E3;
 }
+.backspace:active{
+    background-color: #494949;
+    color: #F4F4F4;
+}
 @media (min-width: 90em){
     .backspace{
         font-size: 32px;
@@ -341,6 +358,10 @@ form{
     font-size: 12px;
     font-weight: 600;
     border: solid 1px #8D49E3;
+}
+.backspace2:active{
+    background-color: #494949;
+    color: #F4F4F4;
 }
 @media (min-width: 90em){
     .backspace2{
@@ -358,6 +379,11 @@ form{
     font-weight: 600;
     border: solid 1px #8D49E3;
 }
+.spacebar:active{
+    background-color: #494949;
+    color: #F4F4F4;
+
+}
 @media (min-width: 90em){
     .spacebar{
         font-size: 32px;
@@ -369,7 +395,6 @@ form{
     flex-direction: column;
     width: 100%;
     height: 27vh;
-
 }
 
 .tecladoNumerico > div{
@@ -389,9 +414,15 @@ form{
     font-size: 20px;
     border: solid 1px #8D49E3;
 }
+.numero:active{
+    background-color: #494949;
+    color: #F4F4F4;
+
+}
 @media (min-width: 90em){
     .numero{
         font-size: 36px;
+        background-color: #494949;
     }
 
 }
