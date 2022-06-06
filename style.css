@@ -1,3 +1,10 @@
+/*
+    preto: #494949
+    branco: #F4F4F4
+    branco opaco: #E3E3E3
+    lilás: #8D49E3
+ */
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -6,37 +13,46 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: rgb(70, 70, 70);
+    background-color: #494949;
+    height: 100vh;
 
 }
-@media(max-width: 6em){
+
+@media (min-width: 90em){
     body{
-        padding: 0 280px;
-    
+        display: flex;
+        flex-direction: column;
+        background-color: #494949;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        padding: 0% 30%;
     }
+
 }
 header{
-    height: 40vh;
+    height: 45vh;
     display: flex;
     order: 2;
-    background-color: rgb(165, 0, 143);
-    padding: 5px;
-    gap: 5px;
+    background-color: #8D49E3;
+    padding: 2%;
+    gap: 2px;
     flex-wrap: wrap;
 }
 header.esconder{
     height: 10vh;
     display: flex;
     order: 2;
-    background-color: rgb(165, 0, 143);
-    padding: 5px;
-    gap: 5px;
+    background-color: #8D49E3;
     flex-wrap: wrap;
+    padding: 1.5%;
+
 }
+
 main{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 55vh;
     order: 1;
 }
 main.esconder{
@@ -46,96 +62,102 @@ main.esconder{
     order: 1;
 }
 .btnAdicionar{
-    background-color: rgb(17, 167, 30);
+    background-color: #F4F4F4;
     border: none;
     font-size: 14px;
     border-radius: 5px;
-    color: white;
+    color: #494949;
     width: 80%;
-    height: 20%;
+    height: 16%;
     font-weight: 600;
 }
+@media (min-width: 90em){
+    .btnAdicionar{
+        font-size: 36px;
+    }
+
+}
+
 .btnUnidade{
-    background-color: rgb(70, 70, 70);
+    background-color: #494949;
     border: none;
     font-size: 14px;
     border-radius: 5px;
     color: white;
-    width: 17%;
-    height: 20%;
+    width: 18%;
+    height: 16%;
     font-weight: 600;
 }
-.btnAdicionar:hover{
-    background-color: rgb(17, 167, 30);
-    
+@media (min-width: 90em){
+    .btnUnidade{
+        font-size: 36px;
+    }
+
 }
 
 .btnRemover{
-    background-color: rgb(148, 0, 116);
+    background-color: #8D49E3;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 2%;
     color: white;
     transition: .2s;
+    font-weight: 600;
+    font-size: 14px;
 }
-.btnRemover:active{
-    opacity: 0.2;
+@media (min-width: 90em){
+    .btnRemover{
+        padding: 3%;
+        font-size: 30px;
 
-}
-.btnRemover:hover{
-    background-color: rgb(116, 0, 0);
+    }
 }
 
 .inputTarefa{
     overflow: hidden;
-    background-color: rgb(247, 247, 247);
+    background-color: #494949;
     border: none;
     display: inherit;
     border-radius: 5px;
     width: 80%;
-    flex-shrink: 20%;
-    padding:  0 4%;
+    height: 16%;
+    padding: 10px;
+    color: #F4F4F4;
 }
 
 .inputTarefa.esconder{
-    background-color: rgb(247, 247, 247);
+    background-color: #494949;
     display: initial;
     border: none;
     display: inherit;
     border-radius: 5px;
+    height: 20vh;
     width: 100%;
-    flex-shrink: 20%;
-    padding:  1% 4%;
+    height: 8vh;
+    padding: 10px;
     text-align: center;
 }
 .inputNum{
     overflow: hidden;
-    background-color: rgb(247, 247, 247);
+    background-color: #494949;
     border: none;
-    display: inherit;
     border-radius: 5px;
     width: 18%;
-    height: 20%;
-    flex-shrink: 20%;
-    padding:  0 4%;
+    height: 16%;
     text-align: center;
-    padding:  2% 4%;
+    color: #F4F4F4;
+}
+@media (min-width: 90em){
+    .inputNum{
+        font-size: 55px;
+    }
+
 }
 
-
-.inputQtd{
-    background-color: rgb(247, 247, 247);
-    border: none;
-    border-radius: 5px;
-    width: 17%;
-    height: 20%;
-    text-align: center;
-    flex-grow: 20%;
-}
 ul{
     display: flex;
     flex-direction: column;
-    background-color: darkgrey;
+    background-color: #494949;
     padding: 2%;
     align-items: center;
     overflow-y: scroll;
@@ -146,17 +168,23 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(226, 226, 226);
+    background-color: #F4F4F4;
     padding: 1px 1px;
     border-radius: 5px;
-    margin: 1px;
+    margin: .2% 0;
     width: 100%;
     transition: 1s;
     color: rgb(75, 75, 75);
     font-weight: 600;
     font-size: 18px;
 }
+@media (min-width: 90em){
+    li{
+  
+        font-size: 48px;
 
+    }
+}
 li:active{
     background-color: rgb(255, 255, 255);
     padding: 2% 3%;
@@ -164,32 +192,46 @@ li:active{
     margin: 10px;
     width: 100%;
 }
+@media (min-width: 90em){
+    li:active{
+        margin: 1px;
+        padding: 0;
 
+
+    }
+}
 .selecionado{
-    background-color: rgba(0, 107, 41, 0.651);
+    background-color: #E3E3E3;
     order: 1;
     transition: 1s;
-    color: white;
+    color: #494949;
     position: relative;
     left: 5%;
-    transform: scalex(0.9);
-    margin: 1px;
+    width: 90%;
+    margin: .2%;
 
 }
 
 span{
     order: -1;
-    padding: 5px;
+    padding: 0 8px;
+
 }
 
 .span{
-    color: rgb(0, 255, 0);
+    color: rgb(53, 228, 0);
     order: -1;
 }
 .qtd{
     order: 1;
     font-size: 14px;
 }
+@media (min-width: 90em){
+    .qtd{
+        font-size: 24px;
+    }
+}
+
 .autocomplete-items{
     display: flex;
     flex-direction: column;
@@ -226,99 +268,187 @@ span{
 
 form{
     display: flex;
-    gap: 5px;
+    gap: 1%;
 }
 
 .tecladoLetras{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 55%;
+    height: 27vh;
 }
 .tecladoLetras > div{
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: white;
-    align-items: center;
- 
-   
 }
 .letra{
-    background-color: rgb(36, 182, 0);
-    border: solid white 1px;
+    background-color: #F4F4F4;
+    border: none;
     width: 10%;
-    height: 100%;
+    height: 90%;
     border-radius: 5px;
-    color: white;
-    font-size: 20px;
-
-
+    color: #494949;
+    font-size: 16px;
+    font-weight: 600;
+    border: solid 1px #8D49E3;
 }
-
-.backspace{
-    background-color: rgb(36, 182, 0);
-    border: solid white 1px;
-    width: 20%;
-    height: 100%;
+@media (min-width: 90em){
+    .letra{
+        font-size: 32px;
+    }
+}
+.capslock{
+    background-color: #F4F4F4;
+    border: none;
+    width: 15%;
+    height: 90%;
     border-radius: 5px;
-    color: white;
+    color: #494949;
     font-size: 12px;
+    font-weight: 600;
+    border: solid 1px #8D49E3;
 }
-
+@media (min-width: 90em){
+    .capslock{
+        font-size: 32px;
+    }
+}
+.backspace{
+    background-color: #F4F4F4;
+    border: none;
+    width: 15%;
+    height: 90%;
+    border-radius: 5px;
+    color: #494949;
+    font-size: 12px;
+    font-weight: 600;
+    border: solid 1px #8D49E3;
+}
+@media (min-width: 90em){
+    .backspace{
+        font-size: 32px;
+    }
+}
 
 .backspace2{
-    background-color: rgb(36, 182, 0);
-    border: solid white 1px;
+    background-color: #F4F4F4;
     width: 20%;
     height: 100%;
     border-radius: 5px;
-    color: white;
+    color: #494949;
     font-size: 12px;
-    margin-left: 20%;
+    font-weight: 600;
+    border: solid 1px #8D49E3;
 }
-
-
-
+@media (min-width: 90em){
+    .backspace2{
+        font-size: 32px;
+    }
+}
+.spacebar{
+    width: 100%;
+    background-color: #F4F4F4;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #494949;
+    font-size: 16px;
+    font-weight: 600;
+    border: solid 1px #8D49E3;
+}
+@media (min-width: 90em){
+    .spacebar{
+        font-size: 32px;
+    }
+}
 
 .tecladoNumerico{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 55%;
+    height: 27vh;
+
 }
 
 .tecladoNumerico > div{
-    margin-left: 25%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
     height: 100%;
-
     align-items: center;
- 
-   
 }
 .numero{
-    background-color: rgb(36, 182, 0);
+    background-color: #F4F4F4;
     border: solid white 1px;
-    width: 10%;
+    width: 20%;
     height: 100%;
     border-radius: 5px;
-    color: white;
+    color: #494949;
     font-size: 20px;
-
+    border: solid 1px #8D49E3;
+}
+@media (min-width: 90em){
+    .numero{
+        font-size: 36px;
+    }
 
 }
-
 .abrirFechar{
     position: absolute;
-    bottom: 200px;
+    bottom: 268px;
+    left: 5px;
+    transform: scale(1.2);
+    background-color: #F4F4F4;
+    border: solid white 1px;
+    border-radius: 5px;
+    color: #494949;
+    font-size: 14px;
+    border: solid 4px #8D49E3;
+    width: 10%;
+
+}
+@media (min-width: 90em){
+    .abrirFechar{
+        font-size: 55px;
+        left: 31%;
+        bottom: 47%;
+        transform: scale(0.8);
+        width: 4%;
+
+    }
+
+}
+h1{
+    font-size: 14px;
+    text-align: center;
+}
+@media (min-width: 90em){
+    h1{
+        font-size: 55px;
+    }
+
+}
+p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #F4F4F4;
+    font-size: 14px;
+}
+@media (min-width: 90em){
+    p{
+        font-size: 55px;
+        left: 32%;
+        color: #F4F4F4;
+    }
 
 }
 
 .esconder{
     display: none;
+    
+    
 }
 

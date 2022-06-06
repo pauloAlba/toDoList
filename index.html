@@ -12,10 +12,9 @@
 <body>
    
     <header>
-
+        <p  onmousedown="abrirTela()" >Digite aqui...</p>
         <button class="abrirFechar">X</button>
-    
-        <h1 onmousedown="abrirTela()" onmousedown="mudarTeclado()" class="inputTarefa" name="myCountry" id="myInput"></h1>
+        <h1  onmousedown="abrirTela()" onmousedown="mudarTeclado()" class="inputTarefa" name="myCountry" id="myInput"></h1>
         <h2 onmousedown="mudarTecladoNumerico()" class="inputNum" name="myCountry" id="myInput"></h2>
         <button class="btnAdicionar">Adicionar</button>
         <button class="btnUnidade"></button>
@@ -42,10 +41,9 @@
                 <button class="letra" value="letra">j</button>
                 <button class="letra" value="letra">k</button>
                 <button class="letra" value="letra">l</button>
-                <button class="letra" value="letra">ç</button>
             </div>
             <div>
-                <button>^</button>
+                <button class="capslock">^</button>
                 <button class="letra" value="letra">z</button>
                 <button class="letra" value="letra">x</button>
                 <button class="letra" value="letra">c</button>
@@ -53,9 +51,14 @@
                 <button class="letra" value="letra">b</button>
                 <button class="letra" value="letra">n</button>
                 <button class="letra" value="letra">m</button>
-                <button class="backspace">Remover</button>
+                <button class="backspace">Back</button>
+            
    
             </div>
+            <div>
+                <button class="spacebar" value="letra">spacebar</button>
+            </div>
+           
        
         </section>
         <section class="tecladoNumerico">
@@ -63,21 +66,25 @@
                 <button class="numero" value="numero">1</button>
                 <button class="numero" value="numero">2</button>
                 <button class="numero" value="numero">3</button>
-                <button class="numero" value="numero">4</button>
+               
             </div>
             <div>
+                <button class="numero" value="numero">4</button>
                 <button class="numero" value="numero">5</button>
                 <button class="numero" value="numero">6</button>
-                <button class="numero" value="numero">7</button>
-                <button class="numero" value="numero">8</button>
+                
+
             </div>
             <div>
+                <button class="numero" value="numero">7</button>
+                <button class="numero" value="numero">8</button>
                 <button class="numero" value="numero">9</button>
-                <button class="numero" value="numero">0</button>
+                
+            </div>
+            <div>
                 <button class="numero" value="numero">.</button>
-
-                <button class="backspace2">Remover</button>
-
+                <button class="numero" value="numero">0</button>
+                <button class="backspace2">Back</button>
             </div>
             
         </section>

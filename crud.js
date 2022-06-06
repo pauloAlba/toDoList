@@ -6,6 +6,7 @@ let btnBackspace2 = document.querySelector('.backspace2')
 let inputQTD = document.querySelector(".inputNum")
 let abrirFechar = document.querySelector('.abrirFechar')
 let btnAdicionar = document.querySelector('.btnAdicionar')
+let spacebar = document.querySelector('.spacebar')
 
 
 
@@ -24,7 +25,7 @@ div2.forEach( (item) => {
 })
 
 
-
+spacebar.addEventListener("click", espaco)
 inputTarefa.addEventListener("click", abrirTela)
 abrirFechar.addEventListener("click", fecharTela)
 inputQTD.addEventListener("focus", mudarTecladoNumerico)
@@ -123,6 +124,7 @@ function abrirTela(){
     abrirFechar.classList.remove("esconder")
     tecladoLetras.classList.remove("esconder")
     tecladoNumerico.classList.add("esconder")
+    let p = document.querySelector("p")
    
     btnAdicionar.classList.remove("esconder")
     btnUnidade.classList.remove("esconder")
@@ -130,6 +132,8 @@ function abrirTela(){
     main.classList.remove("esconder")
     inputQtd.classList.remove("esconder")
     inputTarefa.classList.remove("esconder")
+    p.classList.add("esconder")
+    
 }
 
 function fecharTela(){
@@ -143,6 +147,7 @@ function fecharTela(){
     abrirFechar.classList.add("esconder")
     tecladoLetras.classList.add("esconder")
     tecladoNumerico.classList.add("esconder")
+    let p = document.querySelector("p")
     
 
     btnAdicionar.classList.add("esconder")
@@ -151,6 +156,10 @@ function fecharTela(){
     main.classList.add("esconder")
     inputQtd.classList.add("esconder")
     inputTarefa.classList.add("esconder")
+    inputQtd.textContent = ""
+    inputTarefa.textContent = ""
+    p.classList.remove("esconder")
+    p.textContent = "Digite aqui..."
     
 }
 
@@ -172,10 +181,16 @@ function adicionarnumero (){
 }
 
 function backspace (){
-    document.querySelector(".inputTarefa").textContent =""
+    let textoTarefa = document.querySelector(".inputTarefa").textContent
+    let texto = textoTarefa.slice(0,-1);
+    document.querySelector(".inputTarefa").textContent = texto
 }
+
+
 function backspace2 (){
-    document.querySelector(".inputNum").textContent =""
+    let inputQtd = document.querySelector(".inputNum").textContent
+    let qtd = inputQtd.slice(0,-1);
+    document.querySelector(".inputNum").textContent = qtd
 }
 
 
@@ -200,7 +215,10 @@ function limparTeclado (){
     
 
 }
+function espaco(){
+    document.querySelector(".inputTarefa").textContent +=" "
 
+}
 
 /*
 function sugestao (){
