@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="/manifest.webmanifest">
-    <meta name=”theme-color” content=”#ffffff”>
+    <meta name="description" content="lista de compras simples e fácil de usar">
+    <meta name="theme-color">
+    <link rel="canonical" href="https://listdo.netlify.app">
     <title>crud</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
         <p  onmousedown="abrirTela()" >Digite aqui...</p>
         <button class="abrirFechar">X</button>
         <h1  onmousedown="abrirTela()" onmousedown="mudarTeclado()" class="inputTarefa" name="myCountry" id="myInput"></h1>
-        <h2 onmousedown="mudarTecladoNumerico()" class="inputNum" name="myCountry" id="myInput"></h2>
+        <h2 onmousedown="mudarTecladoNumerico()" class="inputNum"></h2>
         <button class="btnAdicionar">Adicionar</button>
         <button class="btnUnidade"></button>
         <section class="tecladoLetras">
@@ -104,6 +106,5 @@
     
     <script src="/crud.js"></script>
     <script src="/index.js"></script>
-    <script src="/autocomplete.js"></script>
 </body>
 </html>

@@ -9,7 +9,6 @@ self.addEventListener('install', function(event){
                 './index.html',
                 './style.css',
                 './crud.js',
-                './autocomplete.js',
                 './index.js'    
 
             ])

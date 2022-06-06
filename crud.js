@@ -111,7 +111,11 @@ function trocaUnidade (){
     }
 
 }
-window.onload(fecharTela())
+window.addEventListener('load',  function() { 
+        alert('hello!');
+        fecharTela()
+  }, false);
+
 
 function abrirTela(){
     let header = document.querySelector("header")
