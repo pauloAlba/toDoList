@@ -126,6 +126,14 @@ main.esconder{
     height: 16%;
     padding: 10px;
     color: #F4F4F4;
+    font-size: 14px;
+}
+@media (min-width: 60em) {
+    .inputTarefa{
+        
+        font-size: 22px;
+    }
+    
 }
 
 .inputTarefa.esconder{
@@ -430,7 +438,7 @@ form{
 }
 .abrirFechar{
     position: absolute;
-    bottom: 300px;
+    bottom: 48%;
     left: 32%;
     transform: scale(1.2);
     background-color: #F4F4F4;
@@ -444,7 +452,8 @@ form{
 }
 @media (max-width: 50em){
     .abrirFechar{
-        bottom: 300px;
+        position: fixed;
+        bottom: 48%;
         left: 5%;
     }
 
