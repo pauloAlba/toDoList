@@ -18,7 +18,7 @@
 
   </div border="1">
   <h2 align="left">Versão para Tablet / Smartphone</h2>
-  <img src="https://user-images.githubusercontent.com/17308374/172274929-885a5972-e34d-42d6-b8d4-f6673d06934b.png">
+  <img src="https://user-images.githubusercontent.com/17308374/172275055-f8492728-5e6a-4fe6-8fdb-695676f94b78.png">
   </div>
   
  <strong>Links para o projeto:</strong>
