@@ -13,7 +13,7 @@ let spacebar = document.querySelector('.spacebar')
 
 
 
-btnUnidade.textContent = "Unid."
+btnUnidade.textContent = "Unid"
 let div = Array.from(document.querySelectorAll(".letra"))
 let div2 = Array.from(document.querySelectorAll(".numero"))
 
