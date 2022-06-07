@@ -25,6 +25,6 @@
 
 Página: [ver online](https://listdo.netlify.app)
 <br>
-Design: [Figma](https://www.figma.com/file/jMgiVP9OphymuOAJgMqUAE/Untitled?node-id=0%3A1)
+Design: [Figma](https://www.figma.com/file/JDC5ZDUXSlSbEeqJLs2crs/Untitled?node-id=0%3A1)
 <br>
 
