@@ -70,8 +70,12 @@ main.esconder{
     height: 16%;
     font-weight: 600;
 }
+.btnAdicionar:active{
+    background-color: #494949;
+}
 @media (min-width: 90em){
     .btnAdicionar{
+        
         font-size: 36px;
     }
 
@@ -127,11 +131,14 @@ main.esconder{
     padding: 10px;
     color: #F4F4F4;
     font-size: 14px;
+    transition: .2s;
 }
+
 @media (min-width: 60em) {
     .inputTarefa{
         
         font-size: 22px;
+
     }
     
 }
