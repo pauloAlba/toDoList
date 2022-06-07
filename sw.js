@@ -10,7 +10,6 @@ self.addEventListener('install', function(event){
                 './style.css',
                 './crud.js',
                 './index.js'    
-                
             ])
         })
     )

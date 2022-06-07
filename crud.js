@@ -35,6 +35,7 @@ btnAdicionar.addEventListener("click", inserirDados)
 btnUnidade.addEventListener("click", trocaUnidade)
 btnAdicionar.addEventListener("click", limparTeclado)
 
+
 let quantidade = 0
 
 function inserirDados (){
@@ -213,8 +214,9 @@ function mudarTecladoNumerico(){
 }
 
 function limparTeclado (){
-    document.querySelector('.inputNum').textContent = 1
+    document.querySelector('.inputNum').textContent = ""
     document.querySelector(".inputTarefa").textContent =""
+    mudarTeclado()
     
 
 }
