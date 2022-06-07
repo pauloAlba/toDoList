@@ -204,6 +204,7 @@ function mudarTeclado(){
     let tecladoNumerico = document.querySelector(".tecladoNumerico")
     tecladoLetras.classList.remove("esconder")
     tecladoNumerico.classList.add("esconder") 
+    
 }
 
 function mudarTecladoNumerico(){
