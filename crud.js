@@ -101,14 +101,13 @@ function trocaUnidade (){
     click++
     if(click == 1 ){
         btnUnidade.textContent = "kg"
-        
     } else if (click == 2){
-        
         btnUnidade.textContent = "g"
+    }else if (click == 3){
+        btnUnidade.textContent = "l"
     }else{
-        
         click = 0
-        btnUnidade.textContent = "Unid."
+        btnUnidade.textContent = "Unid"
     }
 
 }
