@@ -23,7 +23,7 @@
   
  <strong>Links para o projeto:</strong>
 
-Página: [ver online](https://conlist.netlify.app)
+Página: [ver online](https://listdo.netlify.app)
 <br>
 Design: [Figma](https://www.figma.com/file/jMgiVP9OphymuOAJgMqUAE/Untitled?node-id=0%3A1)
 <br>
