@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Conlist (PWA)</h1>
+  <h1>ToDoList (PWA)</h1>
   
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.4-blue.svg?cacheSeconds=2592000" />
@@ -18,7 +18,7 @@
 
   </div border="1">
   <h2 align="left">Versão para Tablet / Smartphone</h2>
-  <img src="imagem_2022-06-06_221405016](https://user-images.githubusercontent.com/17308374/172274929-885a5972-e34d-42d6-b8d4-f6673d06934b.png">
+  <img src="https://user-images.githubusercontent.com/17308374/172274929-885a5972-e34d-42d6-b8d4-f6673d06934b.png">
   </div>
   
  <strong>Links para o projeto:</strong>
